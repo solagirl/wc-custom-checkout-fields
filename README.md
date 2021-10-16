@@ -2,12 +2,12 @@
 A php class for creating custom checkout fields for WooCommerce websites.
 Screenshots: https://www.solagirl.net/woocommerce-custom-checkout-fields-2021.html
 ## Usage
-Define your your fields then pass theme as parameters to the class constructor.
+Define your fields then pass them as parameters to the class constructor.
 * $billing_fields
 * $shipping_fields
 * $special_fields
 
-$special_fields are fields below order note. They are not created via WooCommerce custom fields filter, and therefore not managed by WooCommerce. WooCommerce will not automatically save them to post_meta and user_meta.
+$special_fields are fields below order note. They are not created via WooCommerce custom fields filter, and therefore not managed by WooCommerce. WooCommerce will not automatically save them to post_meta and user_meta. The validations and savings should be handled by yourself.
 
 A field definition looks like below:
 ```php
